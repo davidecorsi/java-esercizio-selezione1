@@ -14,5 +14,21 @@ public class Main {
 		String s1 = input.nextLine();
 		System.out.print("Inserire la seconda stringa ");
 		String s2 = input.nextLine();
+		System.out.println("Ordine alfabetico:");
+		if(s1.compareTo(s2) == 0 || s1.compareTo(s2) < 0) {
+			System.out.println(s1);
+			System.out.println(s2);
+		} else {
+			System.out.println(s2);
+			System.out.println(s1);
+		}
+		System.out.println("Ordine di lunghezza:");
+		if(s1.length() == s2.length() || s1.length() < s2.length()) {
+			System.out.println(s1);
+			System.out.println(s2);
+		} else {
+			System.out.println(s2);
+			System.out.println(s1);
+		}
 	}
 }
